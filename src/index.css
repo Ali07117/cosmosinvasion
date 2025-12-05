@@ -1,13 +1,187 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1a1a1a;
+  --secondry: #f2f2f2;
+  --primary-text:#1a1a1a;
+  --secondry-text: #f2f2f2;
+}
+/* :root {
+  --primary: #f2f2f2;
+  --secondry: #1a1a1a;
+  --primary-texy:#f2f2f2;
+  --secondry-text: #1a1a1a;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+textarea {
+  resize: none;
 }
+
+.marque{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.12) 50%, rgba(255, 255, 255, 0.2) 100%);
+}
+/* .aboutme{
+  cursor: pointer;
+}
+ .aboutme:hover .aboutme-text{
+  animation-name: aboutme;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+} 
+
+@keyframes aboutme{
+  from{
+    transform: translateY(0%);
+  }
+  to{
+    transform: translateY(-100%);
+  }} */
+
+  .circle-ball{
+    mix-blend-mode: difference !important;
+    pointer-events: none !important;
+  }
+
+  .ff{overflow: hidden !important;}
+
+  .elem-hover{pointer-events: none;}
+
+  .ff{
+    mix-blend-mode: difference;
+  }
+
+/* ------navbar-------------- */
+
+@media screen and (max-width: 1320px) {.hero-text{font-size: 120px;} .leading-text{line-height: 120px;}}
+@media screen and (max-width: 1160px) {.hero-text{font-size: 100px;} .leading-text{line-height: 100px;}}
+@media screen and (max-width: 1000px) {.sitemap-box, .nav-right, .personal-links-box{display: none;} .burger{display: block;}}
+@media screen and (max-width: 800px) {.hero-text{font-size: 90px;} .leading-text{line-height: 90px;}}
+@media screen and (max-width: 735px) {.hero-text{font-size: 80px;} .leading-text{line-height: 80px;} .web-nav, .hero{padding: 0 20px;} .marque-text{font-size: 15px;}}
+@media screen and (max-width: 656px) {.hero-text{font-size: 70px;} .leading-text{line-height: 70px;}}
+@media screen and (max-width: 585px) {.hero-text{font-size: 60px;} .leading-text{line-height: 60px;}}
+@media screen and (max-width: 512px) {.hero-text{font-size: 46px;} .leading-text{line-height: 50px;} .web-nav, .hero{padding: 0 10px;}}
+
+/* ------navbar-------------- */
+/* ------expect-------------- */
+
+
+@media screen and (max-width: 1340px) {.expect-text-box-width{width: 55vw;} .black-text, .grey-text{font-size: 23px;}}
+@media screen and (max-width: 1247px) {.expect-text-box-width{width: 55vw;} .black-text, .grey-text{font-size: 20px;}}
+@media screen and (max-width: 1090px) { .expect-page-left, .expect-page-right{width: 100%;} .expect-page-right{padding-top: 120px;} .expect-page{padding: 0 40px;} .expect-text-box-width{width: 55vw;} .black-text, .grey-text{font-size: 25px;}}
+@media screen and (max-width: 1022px) { .expect-page-left, .expect-page-right{width: 100%; padding-top: 40px;} .expect-page{padding: 0 40px; flex-direction: column;} .expect-text-box-width{width: 99vw;} .black-text, .grey-text{font-size: 25px;}}
+@media screen and (max-width: 607px) { .expect-page-left, .expect-page-right{width: 100%;} .expect-page{padding: 0 40px; flex-direction: column;} .expect-text-box-width{width: 99vw; height: 35px;} .black-text, .grey-text{font-size: 23px;}}
+@media screen and (max-width: 563px) { .expect-page-left, .expect-page-right{width: 100%;} .expect-page{padding: 0 20px; flex-direction: column;} .expect-text-box-width{width: 99vw;} .black-text, .grey-text{font-size: 21px;}}
+@media screen and (max-width: 490px) { .expect-page-left, .expect-page-right{width: 100%;} .expect-page{padding: 0 10px; flex-direction: column;} .expect-text-box-width{width: 99vw; height: 30px;} .black-text, .grey-text{font-size: 19px; font-weight: 300;}}
+@media screen and (max-width: 438px) { .expect-page-left, .expect-page-right{width: 100%;} .expect-page{padding: 0 10px; flex-direction: column;} .expect-text-box-width{width: 99vw; height: 28px;} .black-text, .grey-text{font-size: 18px;} }
+@media screen and (max-width: 417px) { .expect-page-left, .expect-page-right{width: 100%;} .expect-page{padding: 0 10px; flex-direction: column;} .expect-text-box-width{width: 99vw; height: 26px;} .black-text, .grey-text{font-size: 17px;}}
+@media screen and (max-width: 390px) { .expect-page-left, .expect-page-right{width: 100%;} .expect-page{padding: 0 10px; flex-direction: column;} .expect-text-box-width{width: 99vw;} .black-text, .grey-text{font-size: 15.8px}}
+
+
+
+/* ------expect-------------- */
+
+/* -----some of-------- */
+
+@media screen and (max-width: 1022px) { .some-projects-container-left, .some-projects-container-right{width: 100%; margin-top:40px;} .some-projects-container{padding: 0 40px; flex-direction: column;}}
+@media screen and (max-width: 800px) { .some-projects-para{font-size: 50px;}}
+@media screen and (max-width: 550px) { .some-projects-para{font-size: 45px; line-height: 45px;} .some-projects-container{padding: 60px 10px;}}
+@media screen and (max-width: 500px) { .some-projects-para{font-size: 40px; line-height: 40px;}}
+@media screen and (max-width: 455px) { .some-projects-para{font-size: 37px; line-height: 37px;}}
+@media screen and (max-width: 430px) { .some-projects-para{font-size: 35px; line-height: 35px;}}
+
+/* -----some of-------- */
+
+/* -----projects----------- */
+
+@media screen and (max-width: 1022px) { .element{padding: 0 40px;}}
+@media screen and (max-width: 850px) { .elem-brand-used{display: none;}}
+@media screen and (max-width: 630px) { .elem-brand-name{font-size: 35px;}}
+@media screen and (max-width: 550px) { .elem-brand-name{font-size: 30px;} .element{padding: 0 10px;}}
+@media screen and (max-width: 400px) { .elem-brand-name{font-size: 28px;} .element{padding: 0 10px;} .elem-brand-desc{font-size: 15px;}}
+@media screen and (max-width: 370px) { .elem-brand-name{font-size: 28px;} .element{padding: 0 10px;} .elem-brand-desc{font-size: 14.5px;}}
+
+
+/* -----projects----------- */
+/* -----footer----------- */
+
+@media screen and (max-width: 1150px) {.footer-contact-container{width: 100%;}}
+@media screen and (max-width: 1022px) {.footer-upper-section{padding: 60px 40px;}}
+@media screen and (max-width: 600px) {.footer-contact-container{flex-direction: column; gap: 20px;}}
+@media screen and (max-width: 550px) {.footer-upper-section{padding: 60px 10px;} .footer-lower-section{height: 250px;}}
+@media screen and (max-width: 500px) {.footer-engaging-text{font-size: 35px;}}
+@media screen and (max-width: 390px) {.footer-engaging-text{font-size: 33px;}}
+
+
+
+/* -----footer----------- */
+
+@media screen and (max-width: 700px) {.loder-text-1, .loder-text-2{font-size: 60px; line-height: 60px;}}
+@media screen and (max-width: 500px) {.loder-text-1, .loder-text-2{font-size: 50px; line-height: 50px;}}
+@media screen and (max-width: 400px) {.loder-text-1, .loder-text-2{font-size: 45px; line-height: 45px;}}
+
+/* -----loader--------- */
+
+
+
+/* -----loader--------- */
+
+ /* .skill-container */
+
+  @media screen and (max-width: 450px) {.skill-container{padding-left: 30px; padding-right: 30px;}}
+  
+
+
+  /* ===================form handling============================= */
+
+
+  @media screen and (max-width: 850px) {
+
+    .form-container{
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .first-last-box{
+      flex-direction: column;
+    }
+
+    .first-name-field, .last-name-field, .email-field, .text-area-field{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .submit-button{
+      width: 150px;
+      height: 60px;
+      font-size: 16px;
+    }
+  }
+
+
+
+  /* ===================form handling============================= */
+
+  /* @keyframes gradient-slow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-slow {
+  background-size: 200% 200%;
+  animation: gradient-slow 15s ease infinite;
+} */
